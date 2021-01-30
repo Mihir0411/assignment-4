@@ -59,7 +59,7 @@
             </div>
             <div class="input-group f-class">
                 <div>
-                    <label for="">First Class <span id="firstPrice">$150</span></label>
+                    <label for="">First Class <span id="firstPrice">($150)</span></label>
                     <input id="firstSitNumber" type="text" class="inp-style inp-width" value="0">
                 </div>
                 <div class="plus-minus-btn">
@@ -76,7 +76,7 @@
 
             <div class="input-group f-class">
                 <div>
-                    <label for="">Economy <span id="economyPrice">$100</span></label>
+                    <label for="">Economy <span id="economyPrice">($100)</span></label>
                     <input id="economySitNumber" type="text" class="inp-style inp-width" value="0">
                 </div>
                 <div class="plus-minus-btn">
@@ -145,7 +145,7 @@
             if (Class == 'economy') {
                 ticketTotalPrice = ticketSitCountNew * 100;
             }
-            document.getElementById(Class + 'Price').innerText = "$" + ticketTotalPrice
+
             calculateTotal()
         }
         // All Calculate Handling
